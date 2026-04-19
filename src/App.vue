@@ -1,21 +1,18 @@
 <script setup>
 import { ref } from 'vue'
 
-// This "holds" the text you type
 const myText = ref('Initial Text');
 
-// Function to handle the search
 const handleSearch = () => {
   console.log("Soogle Search!")
 }
 
-// Function for the "I'm Feeling Lucky" button
 const handleLucky = () => {
   console.log("Feeling lucky!")}
 </script>
 
 <template>
-  <div class="google-home">
+  <div class="soogle-home">
     <header class="nav-bar">
       <span>Gmail</span>
       <span>Images</span>
@@ -50,8 +47,7 @@ const handleLucky = () => {
 </template>
 
 <style scoped>
-/* Basic layout to center everything */
-.google-home {
+.soogle-home {
   font-family: Arial, sans-serif;
   height: 100vh;
   display: flex;
@@ -74,14 +70,12 @@ const handleLucky = () => {
   margin-top: 70px;
 }
 
-/* Logo Colors */
-.logo { font-size: 70px; font-weight: 500; margin-bottom: 40px; letter-spacing: -3px; }
+.logo { font-size: 70px; font-weight: 500; margin-bottom: 120px; letter-spacing: -3px; }
 .blue { color: #4285F4; }
 .red { color: #EA4335; }
 .yellow { color: #FBBC05; }
 .green { color: #34A853; }
 
-/* Search Bar Styling */
 .search-container { width: 100%; max-width: 584px; }
 
 .search-box {
